@@ -99,7 +99,7 @@ app.post('/api/convert', (req, res) => {
 
       res.json({
         success: true,
-        downloadUrl: `/api/download/${outputFilename}`,
+        downloadUrl: `/download/${outputFilename}`,
         filename: `${path.parse(filename || 'audio').name}.mp3`
       });
     })
