@@ -1,0 +1,80 @@
+.file-upload-wrapper {
+  width: 100%;
+}
+
+.dropzone {
+  border: 3px dashed #cbd5e0;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f7fafc;
+}
+
+.dropzone:hover {
+  border-color: #667eea;
+  background: #edf2f7;
+}
+
+.dropzone.dragging {
+  border-color: #667eea;
+  background: #e6f0ff;
+  transform: scale(1.02);
+}
+
+.dropzone.has-file {
+  border-color: #48bb78;
+  background: #f0fff4;
+}
+
+.dropzone-content {
+  pointer-events: none;
+}
+
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.dropzone h3 {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.dropzone p {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.format-hint {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-top: 0.5rem;
+}
+
+.dropzone.has-file .upload-icon {
+  color: #48bb78;
+}
+
+@media (max-width: 768px) {
+  .dropzone {
+    padding: 2rem 1rem;
+  }
+
+  .upload-icon {
+    font-size: 3rem;
+  }
+
+  .dropzone h3 {
+    font-size: 1.1rem;
+  }
+}
